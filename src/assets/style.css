@@ -1,0 +1,146 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    padding: 5px;
+}
+
+h2 {
+    margin: 0;
+}
+
+label {
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: fit-content;
+    padding: 7.5px 7.5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #24A0ED;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cv-general {
+    background-color: #349475;
+    width: 100%;
+    padding: 30px 0px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cv-general {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+} 
+
+.cv-general * {
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+}
+
+.cv-experience, .cv-education {
+    width: 90%;
+}
+
+.cv h3 {
+    background-color: rgb(242, 242, 242);
+    color: #349475;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.school-name, .company-name {
+    font-weight: bold;
+}
+
+.degree-details, .job-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.start-end {
+    text-align: right;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.cv-education p, .cv-experience p {
+    margin: 0 0 10px 0;
+}
+
+.education-data, .experience-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border: 1px solid #349475;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 20px 0 0;
+}
+
+.education-data p, .experience-data p {
+    text-align: right;
+    margin: 0 10px;
+}
+
+.education-data .hide-btn {
+    text-align: left;
+    margin: 5px 0 0 0;
+}
+
+.edu-item, .job-item {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cv-btns {
+    visibility: hidden;
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+}
